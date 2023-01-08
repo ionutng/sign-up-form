@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+.image {
+    background-image: url("images/background-image.jpg");
+    width: 77vw;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 180px;
+    background-color: black;
+    padding: 16px 0px;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+img {
+    width: 95px;
+    height: 125px;
+}
+
+.image-credits {
+    color: white;
+    position: relative;
+    top: 60%;
+    left: 30%;
+    font-size: 12px;
+}
+
+.image-credits a:link {
+    color: rgb(160, 160, 160);
+}
+
+.image-credits a:visited {
+    color: rgb(160, 160, 160);
+}
+
+.image h1 {
+    color: white;
+    font-size: 100px;
+    font-family: Norse-Bold, sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding-left: 50px;
+}
+
+header, footer {
+    background-color: rgb(241, 241, 241);
+    padding-left: 50px;
+}
+
+header {
+    padding-top: 125px;
+    padding-bottom: 35px;
+    padding-right: 300px;
+}
+
+footer {
+    padding-top: 32px;
+    padding-bottom: 125px;
+}
+
+h1 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+button {
+    width: 225px;
+    height: 50px;
+    color: white;
+    background-color: #596D48;
+    border: 1px solid #596D48;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #596D48;
+    font-weight: bold;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 700px;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    font-size: 16px;
+    padding-left: 6px;
+    background-color: #fdfbf4;
+    border: 1px solid #c3c3c3;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #445039;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 75%;
+    letter-spacing: 1.5px;
+}
+
+input:hover {
+    background-color: #f2f0ea;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:focus {
+    outline: none;
+    border-color: rgb(30, 110, 190);
+}
+
+.pass {
+    margin-bottom: 6px;
+}

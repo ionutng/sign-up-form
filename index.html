@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sign-up Form</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="main.js" defer></script>
+    </head>
+    <body>
+        <div class="image">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="logo picture">
+                <h1>ODIN</h1>
+            </div>
+            <div class="image-credits">
+                <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="body">
+            <header>
+                <h1>
+                    This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                </h1>
+                <h2>You <em>know</em> you want to.</h2>
+            </header>
+            <main>
+                <form id="info-form" action="#" method="GET">
+                    <h2>Let's do this!</h2>
+                    <div class="contact-info">
+                        <p>
+                            <label for="first_name">FIRST NAME *</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </p>
+                        <p>
+                            <label for="last_name">LAST NAME *</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </p>
+                        <p>
+                            <label for="email">EMAIL *</label>
+                            <input type="email" id="email" name="email" required>
+                        </p>
+                        <p>
+                            <label for="phone_number">PHONE NUMBER *</label>
+                            <input type="tel" id="phone_number" name="phone_number"
+                            pattern="^\d{10}$"
+                            title="Please enter a valid phone number, example: 1234567899" required>
+                        </p>
+                        <p class="pass">
+                            <label for="password">PASSWORD *</label>
+                            <input type="password" id="password" name="password" required onkeyup="validatePassword()">
+                        </p>
+                        <p class="pass">
+                            <label for="confirm_password">CONFIRM PASSWORD *</label>
+                            <input type="password" id="confirm_password" name="confirm_password" required onkeyup="validatePassword()">
+                        </p>
+                        <span id="password_alert"></span>
+                    </div>
+                </form>
+            </main>
+            <footer>
+                <button type="submit" form="info-form">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </footer>
+        </div>
+    </body>
+</html>
