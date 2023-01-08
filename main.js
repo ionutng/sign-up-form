@@ -14,7 +14,14 @@ function validatePassword() {
         password.style.borderColor = "red";
         confirmPassword.style.borderColor = "red";
     } else if (password.value != confirmPassword.value) {
+        passwordAlert.style.color = 'red';
         passwordAlert.textContent = "* Passwords do not match";
+        passwordAlert.style.fontSize = "12px";
+        button.disabled = true;
+        button.style.opacity = 0.4;
+        button.style.cursor = "auto";
+        password.style.borderColor = "red";
+        confirmPassword.style.borderColor = "red";
     } else {
         passwordAlert.style.color = 'green';
         passwordAlert.textContent = "* Passwords match";
